@@ -1,0 +1,12 @@
+.popup__container_infoTooltip {
+  height: 330px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+

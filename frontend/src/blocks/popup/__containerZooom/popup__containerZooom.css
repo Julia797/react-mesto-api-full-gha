@@ -1,0 +1,12 @@
+.popup__containerZooom {
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+

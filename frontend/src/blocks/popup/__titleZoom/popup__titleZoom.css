@@ -1,0 +1,21 @@
+.popup__titleZoom {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 291px;
+}
+
+@media screen and (max-width: 600px) {
+  .popup__titleZoom {
+    max-width: 240px;
+  }
+}
+

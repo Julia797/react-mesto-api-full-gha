@@ -1,0 +1,11 @@
+.popup__heading_reg {
+  color: #000;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .popup__heading_reg  {
+    font-size: 20px;
+  }
+}
+

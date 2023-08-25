@@ -1,0 +1,10 @@
+.popup__fotoZoom {
+  margin: 0;
+  padding: 0;
+  display: block;
+  max-width: 75vw;
+  max-height: 75vh;
+  object-fit: cover;
+}
+
+

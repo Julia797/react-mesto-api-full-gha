@@ -1,0 +1,16 @@
+.loginRegistrationForm {
+  width: 358px;
+  display: flex; 
+  flex-direction: column;
+  box-sizing: border-box;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+ }
+
+ @media screen and (max-width: 400px) {
+    .loginRegistrationForm {
+      width: 260px;
+    }
+  }
+ 

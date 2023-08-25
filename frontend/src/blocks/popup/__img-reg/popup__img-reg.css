@@ -1,0 +1,22 @@
+.popup__img-reg {
+  margin: 0;
+  padding: 0;
+  height: 120px;
+  width: 120px;
+  background-image: url('../../../images/ok-reg.svg');
+  background-color: transparent;
+  background-size: cover;
+  object-position: center;
+  border: 0;
+ 
+}
+
+/*@media screen and (max-width: 600px) {
+  .popup__img-reg {
+  height: 20px;
+  width: 20px;
+  top: -36px;
+  right: 0;
+  }
+}*/
+

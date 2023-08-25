@@ -1,0 +1,17 @@
+.indent {
+  padding: 0 200px;
+}
+
+@media screen and (max-width: 1280px) {
+  .indent {
+    padding-left: calc(19px + (200 - 19) * (100vw - 800px) / (1280 - 800));
+    padding-right: calc(19px + (200 - 19) * (100vw - 800px) / (1280 - 800));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .indent {
+    padding: 0 19px;
+  }
+}
+
