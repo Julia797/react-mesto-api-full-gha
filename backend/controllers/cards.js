@@ -20,8 +20,6 @@ module.exports.createCard = (req, res, next) => {
 
 module.exports.getCards = (req, res, next) => {
   Card.find({})
-    .populate('owner')
-    .populate('likes')
     .then((cards) => res.send(cards))
     .catch((err) => next(err));
 };
@@ -61,8 +59,6 @@ module.exports.likeCard = (req, res, next) => {
       { $addToSet: { likes: req.user._id } },
       { new: true },
     )
-      .populate('owner')
-      .populate('likes')
       .orFail(new Error('NotValidId'))
       .then((card) => {
         res.status(200).send(card);
@@ -86,8 +82,6 @@ module.exports.dislikeCard = (req, res, next) => {
       { $pull: { likes: req.user._id } },
       { new: true },
     )
-      .populate('owner')
-      .populate('likes')
       .orFail(new Error('NotValidId'))
       .then((card) => {
         res.status(200).send(card);

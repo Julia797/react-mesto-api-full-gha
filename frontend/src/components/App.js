@@ -110,7 +110,7 @@ function App() {
     Promise.all([api.getUserInfo(localStorage.token), api.getInitialCards(localStorage.token)])
     .then(([dataUserInfo, dataInitialCards]) => {
       setCurrentUser(dataUserInfo)
-      setCards(dataInitialCards)
+      setCards(dataInitialCards.reverse())
       setIsLoadingCards(false)
     })
     .catch((err) => {
@@ -120,7 +120,7 @@ function App() {
   }, [isLoggedIn])
   
   function handleCardLike(card) {
-    const isLiked = card.likes.some(item => item._id === currentUser._id);
+    const isLiked = card.likes.some(item => item === currentUser._id);
     if (isLiked) {
       api.minusLike(card._id, localStorage.token)
       .then((newCard) => {
