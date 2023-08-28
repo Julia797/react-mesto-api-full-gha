@@ -1,4 +1,4 @@
-const { SECRET_KEY } = process.env;
+const { SECRET_KEY = 'secret-key-mesto' } = process.env;
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const BadRequestError = require('../errors/BadRequestError');
