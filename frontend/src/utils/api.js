@@ -101,7 +101,7 @@ class Api {
 };
 
 const api = new Api({
-  baseUrl: 'http://api.mestoforever.nomoredomainsicu.ru',
+  baseUrl: 'https://api.mestoforever.nomoredomainsicu.ru',
 });
 
 export default api;
